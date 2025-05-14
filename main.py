@@ -77,10 +77,6 @@ def deleteEvent(event):
     print(event['id'])
     service.events().delete(calendarId='primary', eventId=event['id']).execute()
 
-
-
-
-
 def main():
     createToken()
     completion = api.chat.completions.create(
